@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070b16">
+  <meta name="description" content="A short presentation about how artificial intelligence is already part of our daily lives.">
+  <title>AI Is Already Part of Our Daily Lives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Game-Style Intro Screen -->
+  <div class="game-intro" id="gameIntro" aria-label="Presentation start screen">
+    <div class="intro-grid"></div>
+    <div class="intro-scanline"></div>
+    <div class="intro-content">
+      <div class="intro-system">
+        <span class="tiny-dot"></span> PRESS START TO PLAY <span class="intro-version">STAGE 01 / 07</span>
+      </div>
+      <div class="intro-emblem"><span>AI</span><i></i><b></b></div>
+      <p class="intro-overline">&gt; SYSTEM_READY: INSERT COIN TO CONTINUE</p>
+      <h1 class="intro-title">READY TO<br><span>EXPLORE AI?</span></h1>
+      <p class="intro-description">A short interactive journey into the tech<br>that powers our everyday digital world.</p>
+      <button class="start-button" id="startButton" type="button">
+        <span class="play-icon">▶</span><span>PRESS START / ENTER</span><span class="start-arrow">⚡</span>
+      </button>
+      <div class="intro-footer">
+        <span>PLAYER 1: SITI NAFIATUL F.</span>
+        <span>HIGH SCORE: 9999</span>
+      </div>
+    </div>
+    <div class="intro-corner corner-tl">[SYSTEM: ONLINE]</div>
+    <div class="intro-corner corner-br">SCORE: 000500</div>
+  </div>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen" aria-live="polite" aria-hidden="true">
+    <div class="loading-content">
+      <div class="loading-logo">AI<span>.</span></div>
+      <p>LOADING ASSETS... [OK]</p>
+      <div class="loading-track"><span id="loadingBar"></span></div>
+      <div class="loading-meta"><span id="loadingPercent">0%</span><span id="loadingStatus">INITIALIZING PLAYER PROFILE...</span></div>
+    </div>
+  </div>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  
+  <header class="topbar slide-topbar">
+    <a class="brand" href="#home" aria-label="Presentation home">
+      <span class="brand-mark">AI</span><span>DAILY<span class="brand-muted">/LIFE</span></span>
+    </a>
+    <div class="presenter-label">BY — SITI NAFIATUL F.</div>
+    <div class="slide-counter" id="slideCounter">01 / 07</div>
+  </header>
+
+  <main>
+    <section class="hero section presentation-slide active-slide" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> A SIMPLE GUIDE TO ARTIFICIAL INTELLIGENCE</div>
+        <h1>AI IS ALREADY<br>PART OF OUR<br><span class="gradient-text">DAILY LIVES.</span></h1>
+        <p class="hero-subtitle">How Artificial Intelligence helps us every day — often in ways we don't even notice.</p>
+        <div class="hero-actions">
+         <a class="primary-button" href="#what-is-ai">Start exploring <span>→</span></a>
+          <span class="read-time"><span class="tiny-dot"></span> start presentation</span>
+        </div>
+        <div class="hero-byline"><span class="byline-line"></span></div>
+      </div>
+      <div class="hero-visual reveal" aria-label="Abstract artificial intelligence network illustration">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+        <div class="core">
+          <div class="core-inner"><span>AI</span><small>INTELLIGENCE<br>IN MOTION</small></div>
+        </div>
+        <span class="node node-one">DATA</span><span class="node node-two">LEARN</span>
+        <span class="node node-three">PATTERNS</span><span class="node node-four">IDEAS</span>
+        <div class="visual-caption"><span class="tiny-dot"></span> CONNECTING DATA TO EVERYDAY LIFE</div>
+      </div>
+    </section>
+
+    <section class="section intro-section presentation-slide" id="what-is-ai">
+      <div class="section-kicker reveal">01 / THE BASICS</div>
+      <div class="section-heading reveal">
+        <h2>So, what exactly<br>is <span class="gradient-text">AI?</span></h2>
+        <p>In simple words, Artificial Intelligence is technology that helps computers learn from data, recognize patterns, and perform tasks that usually require human intelligence.</p>
+      </div>
+      <div class="definition-panel reveal">
+        <div class="definition-icon">✳</div>
+        <div><span class="panel-label">THE SIMPLE IDEA</span><h3>Data in. Patterns found. Helpful results out.</h3><p>AI systems use information to identify patterns and produce predictions, recommendations, or content.</p></div>
+        <div class="definition-orb"><span>01</span><span>02</span><span>03</span></div>
+      </div>
+    </section>
+
+    <section class="section everyday-section presentation-slide" id="everyday">
+      <div class="section-kicker reveal">02 / ALL AROUND US</div>
+      <div class="section-heading reveal">
+        <h2>AI is closer<br>than you <span class="gradient-text">think.</span></h2>
+        <p>We use AI in many apps every day — sometimes without even realizing it.</p>
+      </div>
+      <div class="app-grid">
+        <article class="app-card reveal"><div class="app-symbol tiktok">♪</div><div class="card-tag">01 / RECOMMENDATIONS</div><h3>Social media</h3><p>Platforms such as TikTok and Instagram learn from our activity to recommend content we may enjoy.</p><span class="card-arrow">↗</span></article>
+        <article class="app-card reveal"><div class="app-symbol maps">⌖</div><div class="card-tag">02 / NAVIGATION</div><h3>Google Maps</h3><p>It can use traffic information to estimate travel times and suggest routes.</p><span class="card-arrow">↗</span></article>
+        <article class="app-card reveal"><div class="app-symbol chat">✳</div><div class="card-tag">03 / ASSISTANCE</div><h3>ChatGPT</h3><p>It can help us explore ideas, understand topics, write, and summarize information.</p><span class="card-arrow">↗</span></article>
+      </div>
+      <p class="micro-note reveal"><span class="tiny-dot"></span> AI is not magic. It works with data, models, and patterns.</p>
+    </section>
+
+    <!-- Slide 3 (Fixed Layout) -->
+    <section class="section personal-section presentation-slide" id="personal">
+      <div class="section-kicker reveal">03 / A PERSONAL PERSPECTIVE</div>
+      <div class="personal-layout">
+        <div class="personal-visual reveal">
+          <div class="code-window">
+            <div class="window-top"><i></i><i></i><i></i><span>my-learning.log</span></div>
+            <div class="code-lines">
+              <span><b>01</b> <em>const</em> interest = <strong>"technology";</strong></span>
+              <span><b>02</b> <em>const</em> tool = <strong>"AI";</strong></span>
+              <span><b>03</b> </span>
+              <span><b>04</b> <em>while</em> (learning) {</span>
+              <span><b>05</b> &nbsp; build();</span>
+              <span><b>06</b> &nbsp; explore();</span>
+              <span><b>07</b> &nbsp; improve();</span>
+              <span><b>08</b> }</span>
+            </div>
+            <div class="code-status"><span class="tiny-dot"></span> KEEP LEARNING</div>
+          </div>
+        </div>
+      </div>
+        <div class="personal-copy reveal">
+          <h2>How I use<br><span class="gradient-text">AI.</span></h2>
+          <p>As an IT graduate, I'm interested in technology, especially AI.</p>
+          <p>I use AI to help me learn programming, develop websites, understand data analysis, and summarize long documents.</p>
+          <p class="highlight-line">AI should be our assistant, not our replacement.</p>
+          <p>We still need to think, learn, and understand things by ourselves.</p>
+        </div>
+    </section>
+
+    <section class="section balance-section presentation-slide" id="benefits">
+      <div class="section-kicker reveal">04 / THE BALANCE</div>
+      <div class="section-heading reveal"><h2>Powerful tool.<br><span class="gradient-text">Human choices.</span></h2><p>AI brings real benefits, but using it wisely matters just as much.</p></div>
+      <div class="balance-grid">
+        <article class="balance-card benefit reveal"><div class="balance-top"><span class="balance-icon">↗</span><span class="card-tag">THE BENEFITS</span></div><h3>What AI can help us do</h3><ul><li>Save time on routine tasks</li><li>Learn and explore topics faster</li><li>Organize and understand information</li></ul></article>
+        <article class="balance-card risk reveal"><div class="balance-top"><span class="balance-icon">!</span><span class="card-tag">THE RISKS</span></div><h3>What we should remember</h3><ul><li>Depending on AI too much can weaken independent thinking</li><li>AI can make mistakes</li><li>It cannot fully replace human communication and soft skills</li></ul></article>
+      </div>
+      <div class="balance-footer reveal"><span class="tiny-dot"></span> USE AI AS A TOOL — KEEP YOUR OWN THINKING ACTIVE.</div>
+    </section>
+
+    <section class="section future-section presentation-slide" id="future">
+      <div class="section-kicker reveal">05 / WHAT'S NEXT?</div>
+      <div class="future-layout">
+        <div class="future-copy reveal"><h2>Meet the next<br>step: <span class="gradient-text">AI agents.</span></h2><p>One technology I want to learn more about is AI agents.</p><p>AI agents can be designed to carry out multi-step tasks, such as organizing information, helping analyze data, or tracking daily expenses.</p><p>I haven't learned much about them yet, but I'm excited to explore this technology.</p></div>
+        <div class="agent-visual reveal"><div class="agent-ring ring-one"></div><div class="agent-ring ring-two"></div><div class="agent-core">AGENT<span>AI</span></div><div class="agent-chip chip-a">ANALYZE DATA</div><div class="agent-chip chip-b">ORGANIZE</div><div class="agent-chip chip-c">AUTOMATE</div><div class="agent-chip chip-d">ASSIST</div></div>
+      </div>
+    </section>
+
+    <section class="section closing-section presentation-slide" id="closing">
+      <div class="closing-glow"></div>
+      <div class="section-kicker reveal">06 / ONE LAST THOUGHT</div>
+      <div class="closing-content reveal">
+        <div class="closing-mark">✳</div>
+        <h2>Work smarter.<br><span class="gradient-text">Think for yourself.</span></h2>
+        <p>We don't have to compete with AI. We need to learn how to use it wisely.</p>
+        <p class="closing-emphasis">AI can help us work smarter, but we still need our own brains to think, our hearts to understand others, and our voices to communicate.</p>
+        <div class="thank-you">THANK YOU FOR LISTENING<span>✦</span></div>
+        <p class="final-wink">And remember, don't let AI do all your thinking!</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="slide-controls" id="slideControls" aria-label="Presentation controls">
+    <button class="slide-nav prev" id="prevSlide" type="button" disabled><span>←</span> PREVIOUS</button>
+    <div class="slide-progress" id="slideProgress" aria-label="Slide progress">
+      <span class="progress-dot active"></span><span class="progress-dot"></span><span class="progress-dot"></span>
+      <span class="progress-dot"></span><span class="progress-dot"></span><span class="progress-dot"></span><span class="progress-dot"></span>
+    </div>
+    <button class="slide-nav next" id="nextSlide" type="button">NEXT <span>→</span></button>
+  </div>
+
+  <div class="end-screen" id="endScreen" aria-hidden="true">
+    <div class="end-glow"></div>
+    <p class="intro-overline">PRESENTATION COMPLETED</p>
+    <h2>THANK YOU<br><span>FOR LISTENING.</span></h2>
+    <p>Keep learning. Keep thinking. Keep exploring.</p>
+    <button class="start-button" id="restartButton" type="button"><span class="play-icon">↻</span><span>REPLAY PRESENTATION</span></button>
+    <div class="end-byline">BY — SITI NAFIATUL F.</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
